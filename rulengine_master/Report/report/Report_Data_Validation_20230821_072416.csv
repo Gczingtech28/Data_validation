@@ -1,0 +1,8 @@
+RuleId,RuleName,ColumnName,Validation_Result,Datatype_RuleFile,Datatype_OrignalFile,Datatype_Match,RuleSequence,SequenceMatch,ValidationOperator,Orignalsequence
+NA,Precheck-1,Precheck-Schema,Pass,NA,NA,NA,NA,True,,NA
+NA,Precheck-2,Precheck-Datatype,Fail,NA,NA,Fail,NA,True,,NA
+1,User_Data.csv_User ID validation,User ID,Pass,int,string,False,1,True,None,1
+2,User_Data.csv_Gender validation,Gender,Pass,string,string,True,2,True,None,2
+3,User_Data.csv_Age validation,Age,Pass,int,string,False,3,True,None,3
+4,User_Data.csv_EstimatedSalary validation,EstimatedSalary,Pass,int,string,False,4,True,None,4
+5,User_Data.csv_Purchased validation,Purchased,Pass,int,string,False,5,True,None,5
