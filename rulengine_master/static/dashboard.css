@@ -1,0 +1,268 @@
+/* Base structure */
+body {
+  padding-top: 50px;
+  width: 100%;
+  background-image: url("pexels-lukas-590022.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: whitesmoke;
+}
+
+.navbar-brand {
+  height: 70px;
+}
+
+/* Global styles for header */
+header {
+  width: 100%;
+  height: 100px;
+  /* background-image: linear-gradient(rgba(252, 245, 245, 0.3), rgba(0, 0, 0, 0.15)), url("pexels-lukas-590022.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center; /* Center vertically */
+  background-color: whitesmoke;
+}
+
+/* Styles for top navigation bar */
+.navbar-collapse.collapse {
+  height: 10vh;
+  background: rgba(255, 255, 255, 0.992);
+  color: rgb(246, 241, 241);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  text-transform: uppercase;
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+.navbar-inverse {
+  background-color: #fff;
+  border:0 ;
+}
+
+/* Form styles */
+form#form1 {
+  background-color: white;
+  margin-bottom: -161px;
+}
+
+.login_button{
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid #337ab7;
+  margin-top: -3px;
+}
+ /* .logout_button {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid #337ab7;
+  margin-top: 10px;
+} */
+.logout_button{
+
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 0px 2px; */
+  margin-top: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  border: 1px solid #337ab7;
+}
+.logout_button #logout{
+  margin-top:12px;
+}
+
+.login_button:hover,
+.logout_button:hover {
+  background-color: #337ab7;
+  color: white;
+}
+
+.btn-group {
+  margin-right: 10px;
+}
+
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Main content styles */
+.main {
+  padding: 20px;
+  height: 100%;
+}
+main {
+  padding: 20px;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: whitesmoke;
+}
+.main .page-header {
+  margin-top: 64px;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+/* Add space between words using pseudo-elements */
+.main .page-header::after {
+  content: "\00a0\00a0"; /* Unicode non-breaking space character */
+}
+
+
+
+/* Form styling */
+form {
+  margin-top: -1px;
+}
+form#form1 {
+  position: fixed;
+  margin-top: -20px;
+  background-color: whitesmoke;
+
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Adjust this value to decrease the space */
+  }
+  
+
+
+form input[type="text"],
+form input[type="file"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid #337ab7;
+}
+
+form input[type="submit"]:hover {
+  background-color: #337ab7;
+  color: white;
+}
+
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+
+
+.dropdown-arrow {
+  margin-left: 5px; /* Adjust spacing between text and arrow */
+  font-size: 14px; /* Adjust arrow size */
+}
+
+
+
+.dropdown-menu {
+  min-width: auto; /* Adjust the minimum width as needed */
+  display: none; /* Hide the dropdown by default */
+  position: absolute;
+  background-color: #f9f9f9; /* Dropdown background color */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Show the dropdown menu when hovering over the button */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style the dropdown item links */
+.dropdown-item {
+  color: black; /* Item text color */
+  padding: 3px 17px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Style the dropdown item links on hover */
+.dropdown-item:hover {
+  background-color: #f1f1f1; /* Change to a slightly different color on hover */
+}
+
+
+/* Style for the form */
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-top: 17px;
+}
