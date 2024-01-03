@@ -1,0 +1,151 @@
+[
+    {
+        "isRuleValidationPass": "False",
+        "ruleValidation": [
+            {
+                "RuleId": "NA",
+                "RuleName": "Precheck-1",
+                "ColumnName": "Precheck-Schema",
+                "Validation_Result": "Pass",
+                "Datatype_RuleFile": "NA",
+                "Datatype_OrignalFile": "NA",
+                "Datatype_Match": "NA",
+                "RuleSequence": "NA",
+                "SequenceMatch": "True",
+                "ValidationOperator": "NaN",
+                "Orignalsequence": "NA"
+            },
+            {
+                "RuleId": "NA",
+                "RuleName": "Precheck-2",
+                "ColumnName": "Precheck-Datatype",
+                "Validation_Result": "Fail",
+                "Datatype_RuleFile": "NA",
+                "Datatype_OrignalFile": "NA",
+                "Datatype_Match": "Fail",
+                "RuleSequence": "NA",
+                "SequenceMatch": "True",
+                "ValidationOperator": "None",
+                "Orignalsequence": "NA"
+            },
+            {
+                "RuleId": "1",
+                "RuleName": "User_Data.csv_User ID validation",
+                "ColumnName": "User ID",
+                "Validation_Result": "Pass",
+                "Datatype_RuleFile": "int",
+                "Datatype_OrignalFile": "string",
+                "Datatype_Match": "False",
+                "RuleSequence": "1",
+                "SequenceMatch": "True",
+                "ValidationOperator": "None",
+                "Orignalsequence": "1"
+            },
+            {
+                "RuleId": "2",
+                "RuleName": "User_Data.csv_Gender validation",
+                "ColumnName": "Gender",
+                "Validation_Result": "Pass",
+                "Datatype_RuleFile": "string",
+                "Datatype_OrignalFile": "string",
+                "Datatype_Match": "True",
+                "RuleSequence": "2",
+                "SequenceMatch": "True",
+                "ValidationOperator": "None",
+                "Orignalsequence": "2"
+            },
+            {
+                "RuleId": "3",
+                "RuleName": "User_Data.csv_Age validation",
+                "ColumnName": "Age",
+                "Validation_Result": "Pass",
+                "Datatype_RuleFile": "int",
+                "Datatype_OrignalFile": "string",
+                "Datatype_Match": "False",
+                "RuleSequence": "3",
+                "SequenceMatch": "True",
+                "ValidationOperator": "None",
+                "Orignalsequence": "3"
+            },
+            {
+                "RuleId": "4",
+                "RuleName": "User_Data.csv_EstimatedSalary validation",
+                "ColumnName": "EstimatedSalary",
+                "Validation_Result": "Pass",
+                "Datatype_RuleFile": "int",
+                "Datatype_OrignalFile": "string",
+                "Datatype_Match": "False",
+                "RuleSequence": "4",
+                "SequenceMatch": "True",
+                "ValidationOperator": "None",
+                "Orignalsequence": "4"
+            },
+            {
+                "RuleId": "5",
+                "RuleName": "User_Data.csv_Purchased validation",
+                "ColumnName": "Purchased",
+                "Validation_Result": "Pass",
+                "Datatype_RuleFile": "int",
+                "Datatype_OrignalFile": "string",
+                "Datatype_Match": "False",
+                "RuleSequence": "5",
+                "SequenceMatch": "True",
+                "ValidationOperator": "None",
+                "Orignalsequence": "5"
+            }
+        ],
+        "isSchemaValidationPass": "True",
+        "schemaValidation": [],
+        "isDatatypeValidationPass": "False",
+        "DatatypeValidation": [
+            {
+                "RuleID": "1",
+                "Sequence": "1",
+                "DataAttribute": "User ID",
+                "DataType": "int",
+                "CsvSequence": "1",
+                "CSV_Col_Name": "User ID",
+                "CsvDataType": "string",
+                "Data_Type_Match": "False",
+                "Column_Match": "True",
+                "SequenceMatch": "True"
+            },
+            {
+                "RuleID": "3",
+                "Sequence": "3",
+                "DataAttribute": "Age",
+                "DataType": "int",
+                "CsvSequence": "3",
+                "CSV_Col_Name": "Age",
+                "CsvDataType": "string",
+                "Data_Type_Match": "False",
+                "Column_Match": "True",
+                "SequenceMatch": "True"
+            },
+            {
+                "RuleID": "4",
+                "Sequence": "4",
+                "DataAttribute": "EstimatedSalary",
+                "DataType": "int",
+                "CsvSequence": "4",
+                "CSV_Col_Name": "EstimatedSalary",
+                "CsvDataType": "string",
+                "Data_Type_Match": "False",
+                "Column_Match": "True",
+                "SequenceMatch": "True"
+            },
+            {
+                "RuleID": "5",
+                "Sequence": "5",
+                "DataAttribute": "Purchased",
+                "DataType": "int",
+                "CsvSequence": "5",
+                "CSV_Col_Name": "Purchased",
+                "CsvDataType": "string",
+                "Data_Type_Match": "False",
+                "Column_Match": "True",
+                "SequenceMatch": "True"
+            }
+        ]
+    }
+]

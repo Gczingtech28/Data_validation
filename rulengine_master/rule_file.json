@@ -1,0 +1,62 @@
+[
+    {
+        "RuleID": "1",
+        "RuleName": "User_Data.csv_User ID validation",
+        "DataAttribute": "User ID",
+        "DataType": "int",
+        "ValidationOperator": "None",
+        "ValueToBeMatch": "",
+        "Order": "1",
+        "DataObject": "table",
+        "DataSource": "User_Data.csv",
+        "Sequence": "1"
+    },
+    {
+        "RuleID": "2",
+        "RuleName": "User_Data.csv_Gender validation",
+        "DataAttribute": "Gender",
+        "DataType": "string",
+        "ValidationOperator": "None",
+        "ValueToBeMatch": "",
+        "Order": "2",
+        "DataObject": "table",
+        "DataSource": "User_Data.csv",
+        "Sequence": "2"
+    },
+    {
+        "RuleID": "3",
+        "RuleName": "User_Data.csv_Age validation",
+        "DataAttribute": "Age",
+        "DataType": "int",
+        "ValidationOperator": "None",
+        "ValueToBeMatch": "",
+        "Order": "3",
+        "DataObject": "table",
+        "DataSource": "User_Data.csv",
+        "Sequence": "3"
+    },
+    {
+        "RuleID": "4",
+        "RuleName": "User_Data.csv_EstimatedSalary validation",
+        "DataAttribute": "EstimatedSalary",
+        "DataType": "int",
+        "ValidationOperator": "None",
+        "ValueToBeMatch": "",
+        "Order": "4",
+        "DataObject": "table",
+        "DataSource": "User_Data.csv",
+        "Sequence": "4"
+    },
+    {
+        "RuleID": "5",
+        "RuleName": "User_Data.csv_Purchased validation",
+        "DataAttribute": "Purchased",
+        "DataType": "int",
+        "ValidationOperator": "None",
+        "ValueToBeMatch": "",
+        "Order": "5",
+        "DataObject": "table",
+        "DataSource": "User_Data.csv",
+        "Sequence": "5"
+    }
+]
