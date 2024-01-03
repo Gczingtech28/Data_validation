@@ -1,0 +1,77 @@
+
+
+    #driver.get(WORDPRESS_URL)
+
+    #all_post=driver.find_element(By.XPATH,"//*[@id='menu-posts']/ul/li[2]/a")
+    #all_post.click()
+
+    #time.sleep(5)
+
+    #     # Locate the element by its class name
+    # title_element = driver.find_element(By.CLASS_NAME,"row-title")
+
+
+    #     # Create an ActionChains object and perform the hover action
+    # actions = ActionChains(driver)
+    # actions.move_to_element(title_element).perform()
+
+    # edit_post= driver.find_element(By.LINK_TEXT,"Edit")
+    # edit_post.click()
+
+    # time.sleep(10)
+
+    
+
+    insert_media_button = driver.find_element(By.CSS_SELECTOR, '#insert-media-button')
+    driver.execute_script("arguments[0].scrollIntoView(true);", insert_media_button)
+
+    insert_media_button.click()
+    time.sleep(5)
+    upload_media=driver.find_element(By.XPATH,'//button[@id="menu-item-upload"]')
+    upload_media.click()
+
+    time.sleep(5)
+    select_media=driver.find_element(By.ID,"__wp-uploader-id-1")
+    select_media.click()
+
+    time.sleep(2)
+
+    # Enter the file path and filename (replace with your actual path and filename)
+    file_path = "C:\\Users\\hp\\Downloads\\datamigration.jpg"
+    pyautogui.write(file_path)
+    pyautogui.press('enter')
+
+    time.sleep(5)
+
+    insert_media_post=driver.find_element(By.XPATH,'//button[@class="button media-button button-primary button-large media-button-insert"]')
+    insert_media_post.click()
+
+    time.sleep(5)
+
+    driver.get(WORDPRESS_URL)
+    time.sleep(2)
+    add_title = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@name='post_title']")))
+    add_title.send_keys(title)
+    time.sleep(2)
+    text_tab = wait.until(EC.element_to_be_clickable((By.ID, "content-html")))
+    text_tab.click()
+    add_content = wait.until(EC.element_to_be_clickable((By.ID, "content")))
+    add_content.send_keys(Keys.CONTROL + "v")
+    time.sleep(2)
+
+    key_pharas = wait.until(EC.element_to_be_clickable((By.ID, "focus-keyword-input-metabox")))
+    key_pharas.send_keys("cloud")
+
+    time.sleep(5)
+
+
+    cloud_migration_checkbox = driver.find_element(By.XPATH, "//input[@id='in-category-159']")
+
+    cloud_migration_checkbox.click()
+    time.sleep(2)
+    
+
+
+        
+    
+ 
